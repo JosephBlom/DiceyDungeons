@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] GameManager gameManager;
     [SerializeField] Transform topCast;
     [SerializeField] Transform bottomCast;
     [SerializeField] Transform leftCast;
@@ -93,6 +94,10 @@ public class PlayerMovement : MonoBehaviour
                 gameObject.transform.position += new Vector3(0, 1, 0);
                 resetObjects();
             }
+            else
+            {
+                gameManager.activateDuelCanvas();
+            }
             
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
@@ -102,7 +107,10 @@ public class PlayerMovement : MonoBehaviour
                 gameObject.transform.position += new Vector3(0, -1, 0);
                 resetObjects();
             }
-            
+            else
+            {
+                gameManager.activateDuelCanvas();
+            }
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.A))
         {
@@ -111,7 +119,10 @@ public class PlayerMovement : MonoBehaviour
                 gameObject.transform.position += new Vector3(-1, 0, 0);
                 resetObjects();
             }
-            
+            else
+            {
+                gameManager.activateDuelCanvas();
+            }
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow)|| Input.GetKeyDown(KeyCode.D))
         {
@@ -121,7 +132,10 @@ public class PlayerMovement : MonoBehaviour
                 gameObject.transform.position += new Vector3(1, 0, 0);
                 resetObjects();
             }
-            
+            else
+            {
+                gameManager.activateDuelCanvas();
+            }
         }
     }
 }
