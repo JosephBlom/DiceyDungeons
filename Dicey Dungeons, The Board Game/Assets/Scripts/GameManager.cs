@@ -7,11 +7,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject duelCanvas;
     void Start()
     {
-        duelCanvas.SetActive(false);
+        duelCanvas.GetComponent<Canvas>().enabled = false;
     }
 
     public void activateDuelCanvas()
     {
-        duelCanvas.SetActive(true);
+        duelCanvas.GetComponent<Canvas>().enabled = true;
     }
 }
