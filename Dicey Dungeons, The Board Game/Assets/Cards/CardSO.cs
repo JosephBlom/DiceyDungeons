@@ -18,8 +18,12 @@ public class CardSO : ScriptableObject
     [SerializeField] bool Shock;
     [SerializeField] bool Curse;
     [SerializeField] bool Poison;
+    [SerializeField] bool Reusable;
     [Range(1,6)]
     [SerializeField] int[] diceRequired;
+    [SerializeField] int diceMax;
+    [SerializeField] int diceMin;
+    [SerializeField] int amountRequired;
     //Variables
     bool[] effects;
 
@@ -42,8 +46,12 @@ public class CardSO : ScriptableObject
         effects[2] = shock();
         effects[3] = curse();
         effects[4] = poison();
-
+        effects[5] = reusable();
         return effects;
+    }
+    public int getAmount()
+    {
+        return amountRequired;
     }
     public bool damage()
     {
@@ -64,5 +72,9 @@ public class CardSO : ScriptableObject
     public bool poison()
     {
         return Poison;
+    }
+    public bool reusable()
+    {
+        return Reusable;
     }
 }

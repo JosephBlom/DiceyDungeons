@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1278419abe358dc44b1a5596d3431cc2, type: 3}
-  m_Name: Warrior1
+  m_Name: Spanner
   m_EditorClassIdentifier: 
-  cardName: Slash
-  ability: Deal __ Damage to Targeted Enemy.
+  cardName: Spanner
+  ability: Combine dice.
   Damage: 0
   Freeze: 0
   Shock: 0
   Curse: 0
   Poison: 0
-  diceRequired: 
+  Reusable: 0
+  diceRequired: 02000000
+  diceMax: 0
+  diceMin: 0
+  amountRequired: 0
