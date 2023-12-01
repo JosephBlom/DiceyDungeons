@@ -86,25 +86,42 @@ public class PlayerMovement : MonoBehaviour
     void playerMove()
     {
 
-        if (Input.GetKeyDown(KeyCode.W) && !objectTop || Input.GetKeyDown(KeyCode.UpArrow) && !objectTop)
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            gameObject.transform.position += new Vector3(0,1,0);
-            resetObjects();
+            if (!objectTop)
+            {
+                gameObject.transform.position += new Vector3(0, 1, 0);
+                resetObjects();
+            }
+            
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow) && !objectBottom || Input.GetKeyDown(KeyCode.S) && !objectBottom)
+        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
-            gameObject.transform.position += new Vector3(0, -1, 0);
-            resetObjects();
+            if (!objectBottom)
+            {
+                gameObject.transform.position += new Vector3(0, -1, 0);
+                resetObjects();
+            }
+            
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) && !objectLeft || Input.GetKeyDown(KeyCode.A) && !objectLeft)
+        else if (Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.A))
         {
-            gameObject.transform.position += new Vector3(-1, 0, 0);
-            resetObjects();
+            if (!objectLeft)
+            {
+                gameObject.transform.position += new Vector3(-1, 0, 0);
+                resetObjects();
+            }
+            
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) && !objectRight || Input.GetKeyDown(KeyCode.D) && !objectRight)
+        else if (Input.GetKeyDown(KeyCode.RightArrow)|| Input.GetKeyDown(KeyCode.D))
         {
-            gameObject.transform.position += new Vector3(1, 0, 0);
-            resetObjects();
+
+            if(!objectRight)
+            {
+                gameObject.transform.position += new Vector3(1, 0, 0);
+                resetObjects();
+            }
+            
         }
     }
 }
