@@ -13,5 +13,6 @@ public class GameManager : MonoBehaviour
     public void activateDuelCanvas()
     {
         duelCanvas.GetComponent<Canvas>().enabled = true;
+        Time.timeScale = 0;
     }
 }
