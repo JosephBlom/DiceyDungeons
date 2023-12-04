@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!objectTop)
             {
-                gameObject.transform.position += new Vector3(0, 1, 0);
+                gameObject.transform.position += new Vector3(0.5f, 0.24f, 0);
                 resetObjects();
             }
             else
@@ -104,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!objectBottom)
             {
-                gameObject.transform.position += new Vector3(0, -1, 0);
+                gameObject.transform.position += new Vector3(-0.5f, -0.24f, 0);
                 resetObjects();
             }
             else
@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!objectLeft)
             {
-                gameObject.transform.position += new Vector3(-1, 0, 0);
+                gameObject.transform.position += new Vector3(-0.5f, 0.24f, 0);
                 resetObjects();
             }
             else
@@ -129,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
 
             if(!objectRight)
             {
-                gameObject.transform.position += new Vector3(1, 0, 0);
+                gameObject.transform.position += new Vector3(0.5f, -0.24f, 0);
                 resetObjects();
             }
             else
