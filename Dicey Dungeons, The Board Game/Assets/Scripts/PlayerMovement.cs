@@ -33,10 +33,10 @@ public class PlayerMovement : MonoBehaviour
     }
     void casting()
     {
-        RaycastHit2D top = Physics2D.Raycast(topCast.position, Vector2.up, 1);
-        RaycastHit2D bottom = Physics2D.Raycast(bottomCast.position, -Vector2.up, 1);
-        RaycastHit2D right = Physics2D.Raycast(rightCast.position, -Vector2.left, 1);
-        RaycastHit2D left = Physics2D.Raycast(leftCast.position, Vector2.left, 1);
+        RaycastHit2D top = Physics2D.Raycast(topCast.position, new Vector2(0.5f, 0.24f), 0.5f);
+        RaycastHit2D bottom = Physics2D.Raycast(bottomCast.position, new Vector2(-0.5f, -0.24f), 1);
+        RaycastHit2D right = Physics2D.Raycast(rightCast.position, new Vector2(0.5f, -0.24f), 1);
+        RaycastHit2D left = Physics2D.Raycast(leftCast.position, new Vector2(-0.5f, 0.24f), 1);
         if (left.collider != null)
         {
             if (left.collider.CompareTag("Enemy"))
