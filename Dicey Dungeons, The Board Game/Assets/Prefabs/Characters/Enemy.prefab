@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1947075869089040807}
   - component: {fileID: 324049366319550003}
   - component: {fileID: 4154284949164903940}
+  - component: {fileID: -929664257428909977}
+  - component: {fileID: 1564832203824264635}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Player
@@ -130,3 +132,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3583367, y: 0.31583774}
   m_EdgeRadius: 0
+--- !u!114 &-929664257428909977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088621822991564741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4dc41821f5b474ba9f3193031e51fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cards: []
+  Stats: {fileID: 11400000, guid: df9e29203fa66b74db3bfe7f22f84fe2, type: 2}
+--- !u!114 &1564832203824264635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088621822991564741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddee0b07568edfa458dced4cab2d3723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
