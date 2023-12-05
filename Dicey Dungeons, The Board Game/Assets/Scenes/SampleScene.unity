@@ -1464,6 +1464,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
 <<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
 =======
 --- !u!1 &481000877
@@ -1586,6 +1587,13 @@ MonoBehaviour:
   p1: {fileID: 1321247760}
   p2: {fileID: 1819801847}
 >>>>>>> parent of 0718f16 (Created Game Object Saves):Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
+=======
+--- !u!1 &481000877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1993460125796409848, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+  m_PrefabInstance: {fileID: 3037034055180499924}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 50dfe7c (More work on gameobjects):Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,6 +2146,7 @@ Transform:
   - {fileID: 367711622}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
 <<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
 =======
 --- !u!1 &1819801847 stripped
@@ -2145,6 +2154,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1088621822991564741, guid: 87a861c7516747d4e916fa4c66aa939e, type: 3}
   m_PrefabInstance: {fileID: 6669603617440060821}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 50dfe7c (More work on gameobjects):Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
 --- !u!1 &2060904746 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1837711467404966872, guid: 7f17d57d8986bf941bbd8a0f18b122c1, type: 3}
@@ -2162,7 +2173,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69b0b56f82b79a4d884390bd2d1e914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
 --- !u!1001 &3446518179075498
+=======
+--- !u!1001 &3037034055180499924
+>>>>>>> parent of 50dfe7c (More work on gameobjects):Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2170,6 +2185,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
     - target: {fileID: 316046642643369052, guid: befb4533805b05c45905fa701480796b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -2218,11 +2234,105 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 367488195}
+=======
+    - target: {fileID: 1993460125796409848, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_Name
+      value: DuelCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003998206223417498, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851077046323448395, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+      propertyPath: battleLogic
+      value: 
+      objectReference: {fileID: 2060904748}
+>>>>>>> parent of 50dfe7c (More work on gameobjects):Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
   m_SourcePrefab: {fileID: 100100000, guid: befb4533805b05c45905fa701480796b, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+>>>>>>> parent of 50dfe7c (More work on gameobjects):Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
 --- !u!1001 &4465260764539417119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2287,6 +2397,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2060904748}
   m_SourcePrefab: {fileID: 100100000, guid: 7f17d57d8986bf941bbd8a0f18b122c1, type: 3}
+<<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
 --- !u!1001 &6669603617440060821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2345,16 +2456,23 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87a861c7516747d4e916fa4c66aa939e, type: 3}
 >>>>>>> parent of 0718f16 (Created Game Object Saves):Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
+=======
+>>>>>>> parent of 50dfe7c (More work on gameobjects):Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 4465260764539417119}
   - {fileID: 519420032}
+<<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
 <<<<<<< HEAD:Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
 =======
   - {fileID: 3446518179075498}
   - {fileID: 6669603617440060821}
   - {fileID: 481000881}
 >>>>>>> parent of 0718f16 (Created Game Object Saves):Dicey Dungeons, The Board Game/Assets/Scenes/SampleScene.unity
+=======
+  - {fileID: 3037034055180499924}
+>>>>>>> parent of 50dfe7c (More work on gameobjects):Dicey Dungeons, The Board Game/Assets/Scenes/BoardLevel.unity
   - {fileID: 1040806810}
   - {fileID: 1526680999}

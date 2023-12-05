@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5582720607146279402}
   - component: {fileID: 5966155699663986693}
-  - component: {fileID: -573483110331214141}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -47,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
   duelCanvas: {fileID: 1993460125796409848, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
+<<<<<<< HEAD
 --- !u!114 &-573483110331214141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,3 +62,5 @@ MonoBehaviour:
 =======
   duelCanvas: {fileID: 0}
 >>>>>>> parent of 0718f16 (Created Game Object Saves)
+=======
+>>>>>>> parent of 50dfe7c (More work on gameobjects)

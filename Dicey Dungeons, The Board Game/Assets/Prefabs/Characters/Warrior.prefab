@@ -72,13 +72,17 @@ GameObject:
   m_Component:
   - component: {fileID: 316046642643369052}
   - component: {fileID: 5855214745438830424}
+  - component: {fileID: 3283967803024403908}
   - component: {fileID: 8892216715803043921}
   - component: {fileID: 4115946244461223413}
 <<<<<<< HEAD
   - component: {fileID: 3519386494067507966}
+<<<<<<< HEAD
   - component: {fileID: 809335755908216038}
 =======
 >>>>>>> parent of 0718f16 (Created Game Object Saves)
+=======
+>>>>>>> parent of 50dfe7c (More work on gameobjects)
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Player
@@ -157,6 +161,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &3283967803024403908
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493071751550054401}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000059604645, y: -0.0035416186}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.37250316, y: 0.26625556}
+  m_EdgeRadius: 0
 --- !u!114 &8892216715803043921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddee0b07568edfa458dced4cab2d3723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!58 &809335755908216038
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -239,6 +289,8 @@ CircleCollider2D:
   m_Radius: 0.15
 =======
 >>>>>>> parent of 0718f16 (Created Game Object Saves)
+=======
+>>>>>>> parent of 50dfe7c (More work on gameobjects)
 --- !u!1 &5876407008748214313
 GameObject:
   m_ObjectHideFlags: 0
