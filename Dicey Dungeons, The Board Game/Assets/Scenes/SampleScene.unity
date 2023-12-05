@@ -128,7 +128,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5966155699663986693, guid: 7f17d57d8986bf941bbd8a0f18b122c1, type: 3}
   m_PrefabInstance: {fileID: 4465260764539417119}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2060904746}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c1f518e8caa8664d9f1a6114a27d00b, type: 3}
@@ -1476,6 +1476,7 @@ GameObject:
   - component: {fileID: 481000880}
   - component: {fileID: 481000879}
   - component: {fileID: 481000878}
+  - component: {fileID: 481000882}
   m_Layer: 5
   m_Name: DuelCanvas
   m_TagString: Untagged
@@ -1558,8 +1559,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1390818599}
   - {fileID: 1316728593}
+  - {fileID: 1390818599}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1567,6 +1568,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &481000882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481000877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceae871b00d37074fb947e8139cfb06b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleLogic: {fileID: 2060904748}
+  p1: {fileID: 1321247760}
+  p2: {fileID: 1819801847}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,6 +1952,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316728592}
   m_CullTransparentMesh: 1
+--- !u!1 &1321247760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4493071751550054401, guid: befb4533805b05c45905fa701480796b, type: 3}
+  m_PrefabInstance: {fileID: 3446518179075498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1390818598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,7 +2039,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1390818601}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 481000882}
+        m_TargetAssemblyTypeName: Duel, Assembly-CSharp
+        m_MethodName: startDuel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1390818601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2102,6 +2135,28 @@ Transform:
   - {fileID: 367711622}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1819801847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1088621822991564741, guid: 87a861c7516747d4e916fa4c66aa939e, type: 3}
+  m_PrefabInstance: {fileID: 6669603617440060821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2060904746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1837711467404966872, guid: 7f17d57d8986bf941bbd8a0f18b122c1, type: 3}
+  m_PrefabInstance: {fileID: 4465260764539417119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2060904748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060904746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69b0b56f82b79a4d884390bd2d1e914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3446518179075498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2222,7 +2277,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1837711467404966872, guid: 7f17d57d8986bf941bbd8a0f18b122c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2060904748}
   m_SourcePrefab: {fileID: 100100000, guid: 7f17d57d8986bf941bbd8a0f18b122c1, type: 3}
 --- !u!1001 &6669603617440060821
 PrefabInstance:

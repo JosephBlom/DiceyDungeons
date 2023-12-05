@@ -10,11 +10,6 @@ public class GameManager : MonoBehaviour
         duelCanvas.GetComponent<Canvas>().enabled = false;
     }
 
-    void Update()
-    {
-        resume();
-    }
-
     public void activateDuelCanvas()
     {
         duelCanvas.GetComponent<Canvas>().enabled = true;
