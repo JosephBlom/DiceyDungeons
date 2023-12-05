@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 3283967803024403908}
   - component: {fileID: 8892216715803043921}
   - component: {fileID: 4115946244461223413}
+  - component: {fileID: 3519386494067507966}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Player
@@ -210,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5253ce4c006aa82418d0de823a5eaf70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 5966155699663986693, guid: 7f17d57d8986bf941bbd8a0f18b122c1, type: 3}
   topCast: {fileID: 880553888137378231}
   bottomCast: {fileID: 8512899145248666137}
   leftCast: {fileID: 6302295006274936023}
@@ -230,6 +231,18 @@ MonoBehaviour:
   Cards:
   - {fileID: 11400000, guid: be6b337743e14c6469da056ee8127784, type: 2}
   Stats: {fileID: 11400000, guid: 41b649571cdcf8342bda0f123099b1a2, type: 2}
+--- !u!114 &3519386494067507966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493071751550054401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddee0b07568edfa458dced4cab2d3723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5876407008748214313
 GameObject:
   m_ObjectHideFlags: 0

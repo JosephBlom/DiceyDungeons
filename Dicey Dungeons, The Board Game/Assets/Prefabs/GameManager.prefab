@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1f518e8caa8664d9f1a6114a27d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duelCanvas: {fileID: 0}
+  duelCanvas: {fileID: 1993460125796409848, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
