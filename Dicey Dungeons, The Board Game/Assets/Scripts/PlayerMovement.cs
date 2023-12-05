@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D left = Physics2D.Raycast(leftCast.position, new Vector2(-0.5f, 0.24f), 1);
         if (left.collider != null)
         {
-            if (left.collider.CompareTag("Enemy"))
+            if (left.collider.CompareTag("Player"))
             {
                 objectLeft = true;
             }
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (right.collider != null)
         {
-            if (right.collider.CompareTag("Enemy"))
+            if (right.collider.CompareTag("Player"))
             {
                 objectRight = true;
             }
@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (top.collider != null)
         {
-            if (top.collider.CompareTag("Enemy"))
+            if (top.collider.CompareTag("Player"))
             {
                 objectTop = true;
             }
@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (bottom.collider != null)
         {
-            if (bottom.collider.CompareTag("Enemy"))
+            if (bottom.collider.CompareTag("Player"))
             {
                 objectBottom = true;
             }
