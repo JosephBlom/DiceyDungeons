@@ -10,26 +10,12 @@ public class StatsSO : ScriptableObject
     public int MaxHealth;
     public int XP;
     public int Level;
-    public int diceCount;
-
-    public int getHealth()
+    void Start()
     {
-        return Health;
+        
     }
-    public int getMaxHealth()
+    void Update()
     {
-        return MaxHealth;
-    }
-    public int getXP()
-    {
-        return XP;
-    }
-    public int getLevel()
-    {
-        return Level;
-    }
-    public int getDiceCount()
-    {
-        return diceCount;
+        
     }
 }

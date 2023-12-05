@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1f518e8caa8664d9f1a6114a27d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   duelCanvas: {fileID: 1993460125796409848, guid: da945912738f4a9409f92b896e35c9a6, type: 3}
 --- !u!114 &-573483110331214141
 MonoBehaviour:
@@ -58,3 +59,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69b0b56f82b79a4d884390bd2d1e914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  duelCanvas: {fileID: 0}
+>>>>>>> parent of 0718f16 (Created Game Object Saves)
