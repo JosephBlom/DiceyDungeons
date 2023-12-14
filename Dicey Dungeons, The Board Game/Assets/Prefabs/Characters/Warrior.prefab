@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 324049366319550003}
   - component: {fileID: 4154284949164903940}
   - component: {fileID: -3217557141364901564}
+  - component: {fileID: 1783474308744590521}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Player
@@ -152,6 +153,33 @@ MonoBehaviour:
   bottomCast: {fileID: 2098361568173913434}
   leftCast: {fileID: 9073181412574379054}
   rightCast: {fileID: 6281951254315164390}
+--- !u!50 &1783474308744590521
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088621822991564741}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2398831177576956693
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 2398831177576956693}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.155, y: 0.202, z: 0}
+  m_LocalPosition: {x: -0.191, y: 0.197, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -239,7 +267,7 @@ Transform:
   m_GameObject: {fileID: 4328685758014555391}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.174, y: -0.197, z: 0}
+  m_LocalPosition: {x: -0.16, y: -0.238, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -278,6 +278,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3217557141364901564, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 752931109}
     - target: {fileID: 1088621822991564741, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
       propertyPath: m_Name
       value: Warrior
@@ -424,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1f518e8caa8664d9f1a6114a27d00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duelCanvas: {fileID: 0}
+  duelCanvas: {fileID: 414480235}
 --- !u!4 &752931110
 Transform:
   m_ObjectHideFlags: 0
