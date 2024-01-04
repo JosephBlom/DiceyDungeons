@@ -340,6 +340,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
+      propertyPath: activeCards.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
+      propertyPath: activeCards.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 41f7787652696344dbfe36bad2c418df, type: 2}
+    - target: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
+      propertyPath: activeCards.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: b68c5c68493423f4b91fbab1755a7bb5, type: 2}
+    - target: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
+      propertyPath: activeCardNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
+      propertyPath: activeCardNames.Array.data[0]
+      value: Spanner
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
+      propertyPath: activeCardNames.Array.data[1]
+      value: BearMaul
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

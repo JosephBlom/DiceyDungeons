@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.UIElements;
+using JetBrains.Annotations;
 
 [CreateAssetMenu(menuName = "Card SO", fileName = "New Card")]
 public class CardSO : ScriptableObject
