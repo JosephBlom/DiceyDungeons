@@ -343,10 +343,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1088621822991564741, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1108856049}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
 --- !u!1 &509461291
 GameObject:
@@ -480,6 +477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duelCanvas: {fileID: 414480235}
+  saveManager: {fileID: 1677058290}
 --- !u!4 &752931110
 Transform:
   m_ObjectHideFlags: 0
@@ -2268,11 +2266,10 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1088621822991564741, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
   m_PrefabInstance: {fileID: 492071001}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1108856049
+--- !u!114 &1108856049 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
+  m_PrefabInstance: {fileID: 492071001}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108856037}
   m_Enabled: 1
@@ -2280,7 +2277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ca7658af70bb34bbd4da355e7a1802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
 --- !u!1 &1123760758
 GameObject:
   m_ObjectHideFlags: 0

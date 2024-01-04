@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject duelCanvas;
+    [SerializeField] SaveManager saveManager;
     void Start()
     {
+        saveManager.LoadPlayer();
         duelCanvas.GetComponent<Canvas>().enabled = false;
     }
 

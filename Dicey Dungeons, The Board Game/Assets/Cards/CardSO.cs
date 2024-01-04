@@ -9,21 +9,21 @@ using UnityEngine.UIElements;
 public class CardSO : ScriptableObject
 {
     //Serialized Fields
-    [SerializeField] string cardName;
+    public string cardName;
     [TextArea(2, 3)]
-    [SerializeField] string ability;
+    public string ability;
     [Header("Effects:")]
-    [SerializeField] bool Damage;
-    [SerializeField] bool Freeze;
-    [SerializeField] bool Shock;
-    [SerializeField] bool Curse;
-    [SerializeField] bool Poison;
-    [SerializeField] bool Reusable;
+    public bool Damage;
+    public bool Freeze;
+    public bool Shock;
+    public bool Curse;
+    public bool Poison;
+    public bool Reusable;
     [Range(1,6)]
-    [SerializeField] int[] diceRequired;
-    [SerializeField] int diceMax;
-    [SerializeField] int diceMin;
-    [SerializeField] int amountRequired;
+    public int[] diceRequired;
+    public int diceMax;
+    public int diceMin;
+    public int amountRequired;
     //Variables
     bool[] effects;
 
