@@ -13,7 +13,8 @@ public class DuelManager : MonoBehaviour
     {
         for(int i = 0; i < allCards.Length; i++)
         {
-            if(player1.activeCardNames[i] == allCards[i].getCardName())
+            string cardName = allCards[i].getCardName();
+            if (player1.activeCardNames[i] == cardName)
             {
                 player1.activeCards[i] = allCards[i];
             }
