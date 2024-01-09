@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SaveManager : MonoBehaviour
@@ -30,5 +31,7 @@ public class SaveManager : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         player.transform.position = position;
+
+        player.activeCardNames = data.activeCards; 
     }
 }

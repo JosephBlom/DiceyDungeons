@@ -11,14 +11,19 @@ public class DuelManager : MonoBehaviour
     public CardSO[] allCards;
     private void Start()
     {
-        for(int i = 0; i < allCards.Length; i++)
+        Debug.Log("Scene Start");
+        for(int i = 0; i < player1.activeCardNames.Length; i++)
         {
-            string cardName = allCards[i].getCardName();
-            if (player1.activeCardNames[i] == cardName)
+            for (int x = 0; x < allCards.Length; x++)
             {
-                player1.activeCards[i] = allCards[i];
+                string cardName = allCards[x].getCardName();
+                if (player1.activeCardNames[i] == cardName)
+                {
+                    player1.activeCards.Add(allCards[x]);
+                }
             }
         }
+        
     }
     private void Update()
     {

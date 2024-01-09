@@ -354,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b68c5c68493423f4b91fbab1755a7bb5, type: 2}
     - target: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
       propertyPath: activeCardNames.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6262369752911994962, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
       propertyPath: activeCardNames.Array.data[0]
