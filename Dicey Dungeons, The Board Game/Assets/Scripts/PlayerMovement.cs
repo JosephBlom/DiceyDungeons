@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 
 public class PlayerMovement : MonoBehaviour
@@ -14,15 +15,17 @@ public class PlayerMovement : MonoBehaviour
     bool objectRight = false;
     bool objectTop = false;
     bool objectBottom = false;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
-        casting();
-        playerMove(); 
+        
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name != "DuelScene")
+        {
+            casting();
+            playerMove();
+        }
+        
     }
     void resetObjects()
     {
