@@ -11,10 +11,21 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform bottomCast;
     [SerializeField] Transform leftCast;
     [SerializeField] Transform rightCast;
+    public Camera cameraMain;
+    public bool isTurn;
+    public int usedMoves;
+
+    public Player player;
+
     bool objectLeft = false;
     bool objectRight = false;
     bool objectTop = false;
     bool objectBottom = false;
+
+    private void Start()
+    {
+        player = GetComponent<Player>();
+    }
 
     void Update()
     {
@@ -27,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
+
+    public void followCamera()
+    {
+        cameraMain.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -10);
+    }
+
     void resetObjects()
     {
         objectLeft = false;
@@ -89,56 +106,83 @@ public class PlayerMovement : MonoBehaviour
     }
     void playerMove()
     {
+        if (isTurn)
+        {
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                if (!objectTop)
+                {
+                    usedMoves++;
+                    if (usedMoves <= player.movesPerTurn)
+                    {
+                        gameObject.transform.position += new Vector3(0.5f, 0.25f, 0);
+                        followCamera();
+                        resetObjects();
+                    }
+                    
+                }
+                else
+                {
+                    gameManager.activateDuelCanvas();
+                }
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            if (!objectTop)
-            {
-                gameObject.transform.position += new Vector3(0.5f, 0.25f, 0);
-                resetObjects();
             }
-            else
+            else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             {
-                gameManager.activateDuelCanvas();
+                if (!objectBottom)
+                {
+                    usedMoves++;
+                    if(usedMoves <= player.movesPerTurn)
+                    {
+                        gameObject.transform.position += new Vector3(-0.5f, -0.25f, 0);
+                        followCamera();
+                        resetObjects();
+                    }
+                    
+                }
+                else
+                {
+                    gameManager.activateDuelCanvas();
+                }
             }
-            
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-        {
-            if (!objectBottom)
+            else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
-                gameObject.transform.position += new Vector3(-0.5f, -0.25f, 0);
-                resetObjects();
+                if (!objectLeft)
+                {
+                    usedMoves++;
+                    if (usedMoves <= player.movesPerTurn)
+                    {
+                        gameObject.transform.position += new Vector3(-0.5f, 0.25f, 0);
+                        followCamera();
+                        resetObjects();
+                    }
+                    
+                }
+                else
+                {
+                    gameManager.activateDuelCanvas();
+                }
             }
-            else
+            else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
-                gameManager.activateDuelCanvas();
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.A))
-        {
-            if (!objectLeft)
-            {
-                gameObject.transform.position += new Vector3(-0.5f, 0.25f, 0);
-                resetObjects();
-            }
-            else
-            {
-                gameManager.activateDuelCanvas();
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow)|| Input.GetKeyDown(KeyCode.D))
-        {
 
-            if(!objectRight)
-            {
-                gameObject.transform.position += new Vector3(0.5f, -0.25f, 0);
-                resetObjects();
-            }
-            else
-            {
-                gameManager.activateDuelCanvas();
+                if (!objectRight)
+                {
+                    usedMoves++;
+                    if (usedMoves <= player.movesPerTurn)
+                    {
+                        gameObject.transform.position += new Vector3(0.5f, -0.25f, 0);
+                        followCamera();
+                        resetObjects();
+                    }
+                    
+                }
+                else
+                {
+                    gameManager.activateDuelCanvas();
+                }
             }
         }
     }
+        
 }
