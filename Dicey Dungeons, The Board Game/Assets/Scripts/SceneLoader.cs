@@ -16,6 +16,7 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadScene(string sceneName)
     {
+        FindFirstObjectByType<SaveManager>().SaveGame();
         yield return null;
 
         //Begin to load the Scene you specify

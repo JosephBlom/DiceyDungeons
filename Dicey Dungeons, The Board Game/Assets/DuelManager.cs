@@ -7,12 +7,18 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class DuelManager : MonoBehaviour
 {
-    [SerializeField] Player player1;
+    public Player player1;
+    public Player player2;
     public CardSO[] allCards;
+
     private void Start()
     {
-        Debug.Log("Scene Start");
-        for(int i = 0; i < player1.activeCardNames.Length; i++)
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        player1 = players[0].GetComponent<Player>();
+        player2 = players[1].GetComponent<Player>();
+
+
+        for (int i = 0; i < player1.activeCardNames.Length; i++)
         {
             for (int x = 0; x < allCards.Length; x++)
             {
@@ -23,8 +29,21 @@ public class DuelManager : MonoBehaviour
                 }
             }
         }
-        
+
+        for (int i = 0; i < player2.activeCardNames.Length; i++)
+        {
+            for (int x = 0; x < allCards.Length; x++)
+            {
+                string cardName = allCards[x].getCardName();
+                if (player2.activeCardNames[i] == cardName)
+                {
+                    player2.activeCards.Add(allCards[x]);
+                }
+            }
+        }
+
     }
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))

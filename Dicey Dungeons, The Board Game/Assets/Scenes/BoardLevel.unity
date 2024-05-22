@@ -608,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088621822991564741, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
       propertyPath: m_Name
-      value: Player 2
+      value: Jester
       objectReference: {fileID: 0}
     - target: {fileID: 1947075869089040807, guid: ca9ec653dac98d143b9089016a5986b3, type: 3}
       propertyPath: m_LocalPosition.x

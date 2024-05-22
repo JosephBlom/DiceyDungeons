@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] SaveManager saveManager;
     void Start()
     {
-        saveManager.LoadPlayer();
+        saveManager.LoadGame();
         duelCanvas.GetComponent<Canvas>().enabled = false;
     }
 

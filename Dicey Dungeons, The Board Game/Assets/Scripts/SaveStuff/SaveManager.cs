@@ -5,26 +5,38 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    [SerializeField] Player player;
-
+    public GameObject[] players;
     private void Start()
     {
-        LoadPlayer();
+        players = GameObject.FindGameObjectsWithTag("Player");
+        
+        LoadGame();
     }
 
     private void OnApplicationQuit()
     {
-        SavePlayer();
+        SaveGame();
     }
     
-    public void SavePlayer()
+    public void SaveGame()
     {
-        SaveSystem.SavePlayer(player);
+        foreach(GameObject player in players)
+        {
+            SaveSystem.SavePlayer(player.GetComponent<Player>());
+        }
     }
 
-    public void LoadPlayer()
+    public void LoadGame()
     {
-        PlayerData data = SaveSystem.LoadPlayer();
+        foreach (GameObject player in players)
+        {
+            SaveSystem.LoadPlayer(player.GetComponent<Player>());
+        }
+    }
+
+    public void LoadPlayer(Player player)
+    {
+        PlayerData data = SaveSystem.LoadPlayer(player);
 
         Vector3 position;
         position.x = data.position[0];
