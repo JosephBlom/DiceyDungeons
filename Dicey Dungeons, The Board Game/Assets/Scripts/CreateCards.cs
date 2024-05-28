@@ -7,12 +7,14 @@ using TMPro;
 public class CreateCards : MonoBehaviour
 {
     public DuelManager duelManager;
+    public Transform parentObject;
     public Button button;
     public bool p1;
 
     private void Start()
     {
         duelManager = FindObjectOfType<DuelManager>();
+        createCards();
     }
 
     void createCards()
@@ -22,8 +24,9 @@ public class CreateCards : MonoBehaviour
             Player player = duelManager.player1;
             foreach(CardSO card in player.activeCards)
             {
-                Instantiate(button, Vector3.zero, Quaternion.identity);
+                Instantiate(button, Vector3.zero, Quaternion.identity, parentObject);
                 button.GetComponentInChildren<TextMeshProUGUI>().text = card.getCardName();
+                button.onClick.AddListener(card.useCard);
             }
         }
     }

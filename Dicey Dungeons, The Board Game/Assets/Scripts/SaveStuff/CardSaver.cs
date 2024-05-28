@@ -7,7 +7,7 @@ public class CardSaver
 
     public string cardName;
     public string ability;
-    public bool Damage;
+    public int Damage;
     public bool Freeze;
     public bool Shock;
     public bool Curse;

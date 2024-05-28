@@ -30,7 +30,7 @@ public class SaveManager : MonoBehaviour
     {
         foreach (GameObject player in players)
         {
-            SaveSystem.LoadPlayer(player.GetComponent<Player>());
+            LoadPlayer(player.GetComponent<Player>());
         }
     }
 

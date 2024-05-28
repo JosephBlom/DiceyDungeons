@@ -8,6 +8,12 @@ public class Player : MonoBehaviour
     public int health;
     public int movesPerTurn;
 
+    [Header("Current Effects")]
+    public bool Frozen;
+    public bool Shocked;
+    public bool Cursed;
+    public bool Poisoned;
+
     [Header("Misc Variables")]
     public Vector3 position;
     public string[] activeCardNames;
