@@ -82,13 +82,16 @@ public class GameBehavior : MonoBehaviour
     public void managePlayers()
     {
         Player player = players[currentPlayerTurn].GetComponent<Player>();
-        List<CardSO> playerCards = player.activeCards;
-
-        if (player.Shocked)
+        if(currentPlayerTurn == 0)
         {
-            int shockedCard = Random.Range(0, player.activeCards.Count);
-
+            if (player.Shocked)
+            {
+                int shockedCard = Random.Range(0, player.activeCards.Count);
+                p1Cards[shockedCard].interactable = true;
+                
+            }
         }
+        
     }
 
     void collectCards()
@@ -113,22 +116,22 @@ public class GameBehavior : MonoBehaviour
         {
             foreach(Button card in p1Cards)
             {
-                card.enabled = false;
+                card.interactable = false;
             }
             foreach(Button card in p2Cards)
             {
-                card.enabled = true;
+                card.interactable = true;
             }
         }
         else
         {
             foreach(Button card in p2Cards)
             {
-                card.enabled = false;
+                card.interactable = false;
             }
             foreach(Button card in p1Cards)
             {
-                card.enabled = true;
+                card.interactable = true;
             }
         }
     }
