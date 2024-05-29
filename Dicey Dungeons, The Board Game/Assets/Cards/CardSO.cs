@@ -29,7 +29,7 @@ public class CardSO : ScriptableObject
     public int diceMin;
     public int amountRequired;
     //Variables
-    bool[] effects;
+    List<bool> effects = new List<bool>();
 
     public string getCardName()
     {
@@ -43,13 +43,13 @@ public class CardSO : ScriptableObject
     {
         return diceRequired;
     }
-    public bool[] getEffects()
+    public List<bool> getEffects()
     {
-        effects[0] = freeze();
-        effects[1] = shock();
-        effects[2] = curse();
-        effects[3] = poison();
-        effects[4] = reusable();
+        effects.Add(freeze());
+        effects.Add(shock());
+        effects.Add(curse());
+        effects.Add(poison());
+        effects.Add(reusable());
         return effects;
     }
     public int getAmount()
@@ -85,19 +85,19 @@ public class CardSO : ScriptableObject
         GameBehavior controller = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameBehavior>();
         Player currentPlayer = controller.players[controller.currentPlayerTurn].GetComponent<Player>();
         Player attackedPlayer;
-        if(controller.currentPlayerTurn++ > 1)
+        if (controller.currentPlayerTurn + 1 > 1)
         {
             attackedPlayer = controller.players[0].GetComponent<Player>();
         }
         else
         {
-            attackedPlayer = controller.players[0].GetComponent<Player>();
+            attackedPlayer = controller.players[1].GetComponent<Player>();
         }
         
         if(attack)
         {
             attackedPlayer.health -= Damage;
-            bool[] effectList = getEffects();
+            List<bool> effectList = getEffects();
             if (effectList[0])
             {
                 attackedPlayer.Frozen = true;

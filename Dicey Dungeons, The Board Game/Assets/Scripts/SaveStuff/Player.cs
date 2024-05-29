@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [Header("Character Stats")]
     public int health;
+    public int maxHealth;
     public int movesPerTurn;
 
     [Header("Current Effects")]

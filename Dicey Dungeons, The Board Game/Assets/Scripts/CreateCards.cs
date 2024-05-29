@@ -24,9 +24,19 @@ public class CreateCards : MonoBehaviour
             Player player = duelManager.player1;
             foreach(CardSO card in player.activeCards)
             {
-                Instantiate(button, Vector3.zero, Quaternion.identity, parentObject);
-                button.GetComponentInChildren<TextMeshProUGUI>().text = card.getCardName();
-                button.onClick.AddListener(card.useCard);
+                Button currentButton = Instantiate(button, Vector3.zero, Quaternion.identity, parentObject);
+                currentButton.GetComponentInChildren<TextMeshProUGUI>().text = card.getCardName();
+                currentButton.onClick.AddListener(card.useCard);
+            }
+        }
+        else
+        {
+            Player player = duelManager.player2;
+            foreach (CardSO card in player.activeCards)
+            {
+                Button currentButton = Instantiate(button, Vector3.zero, Quaternion.identity, parentObject);
+                currentButton.GetComponentInChildren<TextMeshProUGUI>().text = card.getCardName();
+                currentButton.onClick.AddListener(card.useCard);
             }
         }
     }

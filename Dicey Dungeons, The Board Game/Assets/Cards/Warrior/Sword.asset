@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Sword
   ability: Deal __ Damage to Targeted Enemy.
+  attack: 1
+  effect: 0
   Damage: 1
+  healing: 0
   Freeze: 0
   Shock: 0
   Curse: 0
   Poison: 0
+  Reusable: 0
   diceRequired: 
+  diceMax: 0
+  diceMin: 0
+  amountRequired: 0

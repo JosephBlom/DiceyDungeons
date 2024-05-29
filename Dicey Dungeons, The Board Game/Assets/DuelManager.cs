@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Experimental.GraphView.GraphView;
+using UnityEngine.UI;
+using TMPro;
 
 public class DuelManager : MonoBehaviour
 {
     public Player player1;
     public Player player2;
+    public Slider p1HP;
+    public Slider p2HP;
+    public TextMeshProUGUI p1HPText;
+    public TextMeshProUGUI p2HPText;
     public CardSO[] allCards;
 
     private void Start()
@@ -17,6 +21,14 @@ public class DuelManager : MonoBehaviour
         player1 = players[0].GetComponent<Player>();
         player2 = players[1].GetComponent<Player>();
 
+        p1HP.maxValue = player1.maxHealth;
+        p2HP.maxValue = player2.maxHealth;
+
+        p1HP.value = player1.health;
+        p2HP.value = player2.health;
+
+        p1HPText.text = player1.health + " / " + player1.maxHealth;
+        p2HPText.text = player2.health + " / " + player2.maxHealth;
 
         for (int i = 0; i < player1.activeCardNames.Length; i++)
         {
@@ -47,6 +59,17 @@ public class DuelManager : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("BoardLevel");
+        }
+
+        p1HP.value = player1.health;
+        p2HP.value = player2.health;
+
+        p1HPText.text = player1.health + " / " + player1.maxHealth;
+        p2HPText.text = player2.health + " / " + player2.maxHealth;
+
+        if(player1.health <= 0 || player2.health <= 0)
         {
             SceneManager.LoadScene("BoardLevel");
         }
