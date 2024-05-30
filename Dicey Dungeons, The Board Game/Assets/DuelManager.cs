@@ -58,10 +58,6 @@ public class DuelManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("BoardLevel");
-        }
 
         p1HP.value = player1.health;
         p2HP.value = player2.health;
