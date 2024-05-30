@@ -1,9 +1,13 @@
+using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
+
+    static string[] allCharacters = {"Warrior", "Jester", "Bear", "Inventor", "Robot", "Thief", "Witch"};
+
     public static void SavePlayer(Player player)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -34,5 +38,18 @@ public static class SaveSystem
             Debug.LogError("Save file not found in " + path);
             return null;
         }
+    }
+
+    public static void ClearSave()
+    {
+        foreach(string character in allCharacters)
+        {
+            string path = Application.persistentDataPath + "/" + character;
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+        }
+        
     }
 }

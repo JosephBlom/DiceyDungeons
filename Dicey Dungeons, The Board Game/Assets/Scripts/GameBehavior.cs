@@ -20,7 +20,7 @@ public class GameBehavior : MonoBehaviour
     public Camera cameraMain;
     public float cameraZOffset = -10;
 
-    void Start()
+    public void BeginScene()
     {
         findAllPlayers();
         currentPlayer = players[currentPlayerTurn].GetComponent<PlayerMovement>();

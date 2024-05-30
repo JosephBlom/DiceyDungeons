@@ -8,6 +8,7 @@ TagManager:
   - GameManager
   - P1CardContainer
   - P2CardContainer
+  - CharacterList
   layers:
   - Default
   - TransparentFX
