@@ -10,6 +10,7 @@ public class SaveManager : MonoBehaviour
 {
     public GameObject[] players;
     [SerializeField] GameBehavior manager;
+    [SerializeField] SpawnList spawnList;
     CharacterList characterList;
     string[] allCharacters = { "Warrior", "Jester", "Bear", "Inventor", "Robot", "Thief", "Witch" };
 
@@ -38,7 +39,8 @@ public class SaveManager : MonoBehaviour
             {
                 if (characterList.allCharacters[i].name.Equals(allCharacters[z]))
                 {
-                    GameObject player = Instantiate(characterList.allCharacters[i], Vector3.zero, Quaternion.identity);
+                    GameObject player = Instantiate(characterList.allCharacters[i], spawnList.playerSpawns[0].position, Quaternion.identity);
+                    spawnList.playerSpawns.Remove(spawnList.playerSpawns[0]);
                     player.name = characterList.allCharacters[i].name;
                 }
             }

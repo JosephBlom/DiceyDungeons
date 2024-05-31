@@ -1778,6 +1778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players: []
+  manager: {fileID: 0}
 --- !u!1 &1136256543
 GameObject:
   m_ObjectHideFlags: 0

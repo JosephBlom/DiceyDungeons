@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         player = GetComponent<Player>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        cameraMain = Camera.main;
     }
 
     void Update()
@@ -53,10 +55,10 @@ public class PlayerMovement : MonoBehaviour
     }
     void casting()
     {
-        RaycastHit2D top = Physics2D.Raycast(topCast.position, new Vector2(0.5f, 0.24f), 0.5f);
-        RaycastHit2D bottom = Physics2D.Raycast(bottomCast.position, new Vector2(-0.5f, -0.24f), 1);
-        RaycastHit2D right = Physics2D.Raycast(rightCast.position, new Vector2(0.5f, -0.24f), 1);
-        RaycastHit2D left = Physics2D.Raycast(leftCast.position, new Vector2(-0.5f, 0.24f), 1);
+        RaycastHit2D top = Physics2D.Raycast(topCast.position, new Vector2(0.5f, 0.25f), 0.5f);
+        RaycastHit2D bottom = Physics2D.Raycast(bottomCast.position, new Vector2(-0.5f, -0.25f), 1);
+        RaycastHit2D right = Physics2D.Raycast(rightCast.position, new Vector2(0.5f, -0.25f), 1);
+        RaycastHit2D left = Physics2D.Raycast(leftCast.position, new Vector2(-0.5f, 0.25f), 1);
         if (left.collider != null)
         {
             if (left.collider.CompareTag("Player"))
